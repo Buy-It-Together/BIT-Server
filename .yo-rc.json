@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "clientPackageManager": "npm",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "enableHibernateCache": true,
+    "enableSwaggerCodegen": true,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "messageBroker": false,
+    "nativeLanguage": "en",
+    "packageName": "com.ujazdowski.buyitogether",
+    "packageFolder": "com/ujazdowski/buyitogether",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "serviceDiscoveryType": false,
+    "skipClient": true,
+    "skipServer": false,
+    "testFrameworks": [],
+    "websocket": "spring-websocket",
+    "baseName": "buyItTogether",
+    "applicationType": "monolith",
+    "buildTool": "maven",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "serverPort": "8080",
+    "jhipsterVersion": "5.5.0",
+    "skipUserManagement": false,
+    "clientFramework": "angularX",
+    "useSass": true,
+    "jwtSecretKey": "NDhlZTA0NGZjNDViN2I0Zjg1ZTY1NmM0NTczYTg2NzM3ZWI5MDk0NTYxYTYwMzIzMzM4YzE0MzYzODZhZjdkYzk3MGE1NTkxNDZlMzA5NTM3NDQyMmFiNGIyYjZhMzllMjVjNGY4NjAzMjRiOTZjMGZjOGU3MTIxMmVhNTU5ZjU="
+  },
+  "entities": [
+    "UserOffer",
+    "Chat",
+    "UserOfferChat",
+    "Message"
+  ]
+}

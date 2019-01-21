@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity UserOfferChat.
+    -->
+    <changeSet id="20181113090338-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="chat_id"
+                                 baseTableName="user_offer_chat"
+                                 constraintName="fk_user_offer_chat_chat_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="chat"/>
+
+        <addForeignKeyConstraint baseColumnNames="user_offer_id"
+                                 baseTableName="user_offer_chat"
+                                 constraintName="fk_user_offer_chat_user_offer_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="user_offer"/>
+
+    </changeSet>
+</databaseChangeLog>

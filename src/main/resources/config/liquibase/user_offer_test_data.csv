@@ -1,0 +1,7 @@
+id;jhi_link;latitude;longitude;distance;count_of_items;count_of_items_to_get_bonus;expiration_date;user_id
+100;https://example.com/item/phone;54;22;1.0;1;5;2018-11-30 01:00:00;3
+101;https://example.com/item/phone;54;22.01;1.0;1;5;2018-11-30 01:00:00;4
+102;https://example.com/item/phone;54.005;22.005;1.0;1;5;2018-11-30 01:00:00;2
+103;https://example.com/item/phone;54.1;22.1;1.0;1;5;2018-11-30 01:00:00;5
+104;https://example.com/item/phone;54.005;22.01;1.0;1;5;2018-11-30 01:00:00;6
+105;https://example.com/item/phone;54.1;22.015;1.0;1;5;2018-11-30 01:00:00;7

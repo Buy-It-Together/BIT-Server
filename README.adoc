@@ -1,0 +1,8 @@
+# Buy It Together Server
+Bartosz Ujazdowski
+
+## Konfiguracja
+Przykladowa konfigracja uruchomieniowa serwera:
+----
+java -Dserver.port="80" -Djhipster.mail.from="example@gmail.com" -Djhipster.mail.base-url="http://127.0.0.1"  -Dspring.mail.username="example@gmail"  -Dspring.mail.password="password"  -Dspring.datasource.password="password" -Dspring.datasource.username="username" -jar bit-server.war
+----

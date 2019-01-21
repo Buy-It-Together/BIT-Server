@@ -1,0 +1,29 @@
+{
+    "name": "Chat",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "users",
+            "otherEntityName": "userOfferChat",
+            "otherEntityRelationshipName": "chat"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "messages",
+            "otherEntityName": "message",
+            "otherEntityRelationshipName": "chat"
+        }
+    ],
+    "changelogDate": "20181113090337",
+    "entityTableName": "chat",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": [
+        "buyItTogether"
+    ]
+}

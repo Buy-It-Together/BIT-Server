@@ -1,0 +1,37 @@
+{
+    "name": "UserOfferChat",
+    "fields": [
+        {
+            "fieldName": "accepted",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "chat",
+            "otherEntityName": "chat",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "userOffer",
+            "otherEntityName": "userOffer",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181113090338",
+    "entityTableName": "user_offer_chat",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": [
+        "buyItTogether"
+    ]
+}

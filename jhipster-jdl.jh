@@ -1,0 +1,54 @@
+application {
+  config {
+    baseName buyItTogether
+    applicationType monolith
+    prodDatabaseType postgresql
+    buildTool maven
+    authenticationType jwt
+    cacheProvider ehcache
+    enableSwaggerCodegen true
+    packageName com.ujazdowski.buyitogether
+    serverPort 8080
+    skipClient true
+    enableHibernateCache true
+    websocket spring-websocket
+  }
+  entities UserOffer, Chat, UserOfferChat, Message
+}
+
+entity UserOffer {
+	link String required
+	longitude Double required,
+    latitude Double required,
+	distance Double required,
+    countOfItems Integer required,
+	countOfItemsToGetBonus Integer required,
+	expirationDate Instant required
+}
+
+entity Message {
+	message String required,
+    date Instant required
+}
+
+entity Chat {
+}
+
+entity UserOfferChat {
+	accepted Boolean required
+}
+
+relationship ManyToOne {
+	UserOfferChat{chat} to Chat{users}
+    Message{chat} to Chat{messages}
+    UserOffer{user} to User
+    Message{user} to User
+}
+
+relationship OneToMany {
+    UserOffer{userOfferChat} to UserOfferChat{userOffer}
+}
+
+dto * with mapstruct
+service all with serviceImpl
+paginate UserOfferChat, UserOffer with pagination
